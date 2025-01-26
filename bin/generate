@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+url="${LLM_URL}"
+prompt="${@}"
+
+curl $LLM_URL \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "llama3.2",
+    "prompt": "'"$prompt"'"
+  }'
