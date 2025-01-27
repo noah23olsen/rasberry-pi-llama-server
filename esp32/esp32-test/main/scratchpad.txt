@@ -1,0 +1,20 @@
+curl http://8a03-192-68-143-170.ngrok-free.app/api/generate -d '{
+  "model": "llama3.2",
+  "prompt": "In 10 words or less, Why is the sky blue?",
+  "stream": false
+}'
+
+
+curl http://192.168.2.180:11434/api/generate -d '{
+  "model": "llama3.2",
+  "prompt": "In 10 words or less, Why is the sky blue?",
+  "stream": false
+}'
+
+
+export PORT=/dev/cu.SLAB_USBtoUART
+
+idf.py build
+idf.py -p $PORT flash
+idf.py -p $PORT monitor
+

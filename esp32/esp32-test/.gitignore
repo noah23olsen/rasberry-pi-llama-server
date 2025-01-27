@@ -1,0 +1,49 @@
+# Ignore directories
+/build/
+.ccls-cache/
+.vscode/
+sdkconfig
+sdkconfig.old
+/managed_components
+
+# Ignore CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CMakeLists.txt.user
+
+# Ignore IDF specific files
+project_description.json
+flash_project_args
+partition_table/
+
+# Ignore Python virtual environments (if using)
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore compiled object files
+*.o
+*.obj
+
+# Ignore binaries
+*.bin
+*.elf
+*.map
+*.hex
+
+# Ignore logs and debugging
+*.log
+
+# Ignore editor or OS-specific files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Ignore other temp files
+*.tmp
+*.bak
+
