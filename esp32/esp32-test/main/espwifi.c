@@ -6,8 +6,8 @@
 #include "nvs_flash.h"
 #include "llama.h"
 
-#define EXAMPLE_ESP_WIFI_SSID      "DVNT-CORE"
-#define EXAMPLE_ESP_WIFI_PASS      "mobile11"
+#define EXAMPLE_ESP_WIFI_SSID      "xxxxx"
+#define EXAMPLE_ESP_WIFI_PASS      "xxxxx"
 #define EXAMPLE_ESP_MAXIMUM_RETRY  5
 
 static const char *TAG = "wifi station";
